@@ -1,0 +1,66 @@
+# Walk-forward cross-sectional ranking. All paths are relative to the repo root.
+# Hyperparameters below are the search space. Chosen values are selected inside
+# each training window only and written to reports/hyperparams.json.
+
+data:
+  start: "2005-01-01"
+  end: null
+  cache_dir: data/raw
+  pit_constituents_csv: null
+  max_tickers: null
+  benchmark: SPY
+  wikipedia_url: "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+  french_ff5: F-F_Research_Data_5_Factors_2x3
+  french_mom: F-F_Momentum_Factor
+
+features:
+  beta_window: 252
+  vol_short: 20
+  vol_long: 60
+  max_missing_frac: 0.5
+
+models:
+  seeds: [0, 1, 2, 3, 4]
+  ridge:
+    alphas: [0.1, 1.0, 10.0, 100.0]
+  lgbm:
+    n_estimators: [200]
+    learning_rate: [0.05]
+    num_leaves: [15, 31]
+    min_child_samples: [20, 50]
+    subsample: 0.8
+    colsample_bytree: 0.8
+  mlp:
+    hidden: [64, 32, 16]
+    dropout_grid: [0.1, 0.3]
+    lr: 0.001
+    weight_decay: 0.0001
+    rank_loss_lambda_grid: [0.0, 0.2]
+    tune_epochs: 8
+    min_epochs: 4
+    max_epochs: 20
+    grad_clip: 1.0
+
+validation:
+  # First month-end at which a model is allowed to trade.
+  first_test_start: "2012-01-31"
+  retrain_every_months: 12
+  embargo_months: 1
+  horizon_months: 1
+  inner_valid_months: 24
+  min_train_months: 36
+  min_inner_train_months: 24
+
+backtest:
+  cost_bps: 10
+  n_deciles: 10
+  min_names: 30
+  hac_lags: 3
+
+outputs:
+  checkpoints: checkpoints
+  activations: activations
+  reports: reports
+  figures: reports/figures
+  processed: data/processed
+  logs: logs

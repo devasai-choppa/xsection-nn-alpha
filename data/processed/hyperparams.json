@@ -1,0 +1,1652 @@
+[
+  {
+    "model": "momentum",
+    "window": "2012-01",
+    "chosen": {
+      "rule": "equal-weight mom minus reversal"
+    }
+  },
+  {
+    "model": "ridge",
+    "chosen": {
+      "alpha": 0.1,
+      "inner_rank_ic": 0.017123147535468623
+    },
+    "grid": [
+      {
+        "alpha": 0.1,
+        "inner_rank_ic": 0.017123147535468623
+      },
+      {
+        "alpha": 1.0,
+        "inner_rank_ic": 0.017088624987407885
+      },
+      {
+        "alpha": 10.0,
+        "inner_rank_ic": 0.016909057014954206
+      },
+      {
+        "alpha": 100.0,
+        "inner_rank_ic": 0.016279597023437672
+      }
+    ],
+    "window": "2012-01"
+  },
+  {
+    "model": "lgbm",
+    "chosen": {
+      "n_estimators": 200,
+      "learning_rate": 0.05,
+      "num_leaves": 15,
+      "min_child_samples": 20,
+      "inner_rank_ic": 0.02282293707856724
+    },
+    "grid": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.02282293707856724
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.021135642271038688
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.02254023801010303
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.022098450160705007
+      }
+    ],
+    "window": "2012-01"
+  },
+  {
+    "model": "mlp",
+    "chosen": {
+      "dropout": 0.1,
+      "rank_lambda": 0.2,
+      "epochs": 8,
+      "inner_rank_ic": 0.030160162221703996
+    },
+    "grid": [
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.0,
+        "epochs": 8,
+        "inner_rank_ic": 0.029827428266494815
+      },
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.2,
+        "epochs": 8,
+        "inner_rank_ic": 0.030160162221703996
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.0,
+        "epochs": 6,
+        "inner_rank_ic": 0.004040689732561113
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.2,
+        "epochs": 6,
+        "inner_rank_ic": 0.0048797236675678785
+      }
+    ],
+    "window": "2012-01"
+  },
+  {
+    "model": "momentum",
+    "window": "2013-01",
+    "chosen": {
+      "rule": "equal-weight mom minus reversal"
+    }
+  },
+  {
+    "model": "ridge",
+    "chosen": {
+      "alpha": 100.0,
+      "inner_rank_ic": 0.028661674863287783
+    },
+    "grid": [
+      {
+        "alpha": 0.1,
+        "inner_rank_ic": 0.028556958966788924
+      },
+      {
+        "alpha": 1.0,
+        "inner_rank_ic": 0.028551323920950274
+      },
+      {
+        "alpha": 10.0,
+        "inner_rank_ic": 0.02858817354026295
+      },
+      {
+        "alpha": 100.0,
+        "inner_rank_ic": 0.028661674863287783
+      }
+    ],
+    "window": "2013-01"
+  },
+  {
+    "model": "lgbm",
+    "chosen": {
+      "n_estimators": 200,
+      "learning_rate": 0.05,
+      "num_leaves": 15,
+      "min_child_samples": 20,
+      "inner_rank_ic": 0.039992244852256796
+    },
+    "grid": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.039992244852256796
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.029071889253800793
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.033225711583924296
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.028996448824142596
+      }
+    ],
+    "window": "2013-01"
+  },
+  {
+    "model": "mlp",
+    "chosen": {
+      "dropout": 0.1,
+      "rank_lambda": 0.2,
+      "epochs": 4,
+      "inner_rank_ic": 0.03266935697699095
+    },
+    "grid": [
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.0,
+        "epochs": 4,
+        "inner_rank_ic": 0.032185270836319536
+      },
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.2,
+        "epochs": 4,
+        "inner_rank_ic": 0.03266935697699095
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.0,
+        "epochs": 4,
+        "inner_rank_ic": 0.026631697659577888
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.2,
+        "epochs": 4,
+        "inner_rank_ic": 0.02717008321294224
+      }
+    ],
+    "window": "2013-01"
+  },
+  {
+    "model": "momentum",
+    "window": "2014-01",
+    "chosen": {
+      "rule": "equal-weight mom minus reversal"
+    }
+  },
+  {
+    "model": "ridge",
+    "chosen": {
+      "alpha": 1.0,
+      "inner_rank_ic": 0.037932608159542865
+    },
+    "grid": [
+      {
+        "alpha": 0.1,
+        "inner_rank_ic": 0.03792445555841356
+      },
+      {
+        "alpha": 1.0,
+        "inner_rank_ic": 0.037932608159542865
+      },
+      {
+        "alpha": 10.0,
+        "inner_rank_ic": 0.03783920342392095
+      },
+      {
+        "alpha": 100.0,
+        "inner_rank_ic": 0.03776801079683189
+      }
+    ],
+    "window": "2014-01"
+  },
+  {
+    "model": "lgbm",
+    "chosen": {
+      "n_estimators": 200,
+      "learning_rate": 0.05,
+      "num_leaves": 15,
+      "min_child_samples": 50,
+      "inner_rank_ic": 0.027998273733737995
+    },
+    "grid": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.025510734631589635
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.027998273733737995
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.011393178127993389
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.01972989063268073
+      }
+    ],
+    "window": "2014-01"
+  },
+  {
+    "model": "mlp",
+    "chosen": {
+      "dropout": 0.3,
+      "rank_lambda": 0.2,
+      "epochs": 8,
+      "inner_rank_ic": 0.023658629319405673
+    },
+    "grid": [
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.0,
+        "epochs": 6,
+        "inner_rank_ic": 0.009640175119893854
+      },
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.2,
+        "epochs": 6,
+        "inner_rank_ic": 0.010234154199992572
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.0,
+        "epochs": 8,
+        "inner_rank_ic": 0.0235775946284917
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.2,
+        "epochs": 8,
+        "inner_rank_ic": 0.023658629319405673
+      }
+    ],
+    "window": "2014-01"
+  },
+  {
+    "model": "momentum",
+    "window": "2015-01",
+    "chosen": {
+      "rule": "equal-weight mom minus reversal"
+    }
+  },
+  {
+    "model": "ridge",
+    "chosen": {
+      "alpha": 10.0,
+      "inner_rank_ic": 0.015365985359147101
+    },
+    "grid": [
+      {
+        "alpha": 0.1,
+        "inner_rank_ic": 0.01533082637974526
+      },
+      {
+        "alpha": 1.0,
+        "inner_rank_ic": 0.01533347639248639
+      },
+      {
+        "alpha": 10.0,
+        "inner_rank_ic": 0.015365985359147101
+      },
+      {
+        "alpha": 100.0,
+        "inner_rank_ic": 0.015357068826799927
+      }
+    ],
+    "window": "2015-01"
+  },
+  {
+    "model": "lgbm",
+    "chosen": {
+      "n_estimators": 200,
+      "learning_rate": 0.05,
+      "num_leaves": 15,
+      "min_child_samples": 20,
+      "inner_rank_ic": 0.011921256729263403
+    },
+    "grid": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.011921256729263403
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.008507095841350556
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.00694568990396822
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.007454916537671933
+      }
+    ],
+    "window": "2015-01"
+  },
+  {
+    "model": "mlp",
+    "chosen": {
+      "dropout": 0.3,
+      "rank_lambda": 0.2,
+      "epochs": 5,
+      "inner_rank_ic": 0.007242112082987886
+    },
+    "grid": [
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.0,
+        "epochs": 8,
+        "inner_rank_ic": 0.006364921060233234
+      },
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.2,
+        "epochs": 8,
+        "inner_rank_ic": 0.00593152656838176
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.0,
+        "epochs": 5,
+        "inner_rank_ic": 0.007115486889541397
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.2,
+        "epochs": 5,
+        "inner_rank_ic": 0.007242112082987886
+      }
+    ],
+    "window": "2015-01"
+  },
+  {
+    "model": "momentum",
+    "window": "2016-01",
+    "chosen": {
+      "rule": "equal-weight mom minus reversal"
+    }
+  },
+  {
+    "model": "ridge",
+    "chosen": {
+      "alpha": 0.1,
+      "inner_rank_ic": 0.030944207170061345
+    },
+    "grid": [
+      {
+        "alpha": 0.1,
+        "inner_rank_ic": 0.030944207170061345
+      },
+      {
+        "alpha": 1.0,
+        "inner_rank_ic": 0.030937497285047116
+      },
+      {
+        "alpha": 10.0,
+        "inner_rank_ic": 0.030925305913067257
+      },
+      {
+        "alpha": 100.0,
+        "inner_rank_ic": 0.030371214078949008
+      }
+    ],
+    "window": "2016-01"
+  },
+  {
+    "model": "lgbm",
+    "chosen": {
+      "n_estimators": 200,
+      "learning_rate": 0.05,
+      "num_leaves": 15,
+      "min_child_samples": 20,
+      "inner_rank_ic": 0.031765333509776776
+    },
+    "grid": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.031765333509776776
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.027689145298640788
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.023309742410139476
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.027432092912163305
+      }
+    ],
+    "window": "2016-01"
+  },
+  {
+    "model": "mlp",
+    "chosen": {
+      "dropout": 0.1,
+      "rank_lambda": 0.2,
+      "epochs": 6,
+      "inner_rank_ic": 0.030767844112942044
+    },
+    "grid": [
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.0,
+        "epochs": 6,
+        "inner_rank_ic": 0.029894800537077503
+      },
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.2,
+        "epochs": 6,
+        "inner_rank_ic": 0.030767844112942044
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.0,
+        "epochs": 6,
+        "inner_rank_ic": 0.020721309468336013
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.2,
+        "epochs": 6,
+        "inner_rank_ic": 0.02175877318045798
+      }
+    ],
+    "window": "2016-01"
+  },
+  {
+    "model": "momentum",
+    "window": "2017-01",
+    "chosen": {
+      "rule": "equal-weight mom minus reversal"
+    }
+  },
+  {
+    "model": "ridge",
+    "chosen": {
+      "alpha": 0.1,
+      "inner_rank_ic": 0.044081702060073835
+    },
+    "grid": [
+      {
+        "alpha": 0.1,
+        "inner_rank_ic": 0.044081702060073835
+      },
+      {
+        "alpha": 1.0,
+        "inner_rank_ic": 0.044059452674265205
+      },
+      {
+        "alpha": 10.0,
+        "inner_rank_ic": 0.04402001241085914
+      },
+      {
+        "alpha": 100.0,
+        "inner_rank_ic": 0.04398220714196573
+      }
+    ],
+    "window": "2017-01"
+  },
+  {
+    "model": "lgbm",
+    "chosen": {
+      "n_estimators": 200,
+      "learning_rate": 0.05,
+      "num_leaves": 15,
+      "min_child_samples": 20,
+      "inner_rank_ic": 0.033511074692332915
+    },
+    "grid": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.033511074692332915
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.026396834897937416
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.025107732133409194
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.024794215510772755
+      }
+    ],
+    "window": "2017-01"
+  },
+  {
+    "model": "mlp",
+    "chosen": {
+      "dropout": 0.1,
+      "rank_lambda": 0.0,
+      "epochs": 7,
+      "inner_rank_ic": 0.03629133910718318
+    },
+    "grid": [
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.0,
+        "epochs": 7,
+        "inner_rank_ic": 0.03629133910718318
+      },
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.2,
+        "epochs": 7,
+        "inner_rank_ic": 0.036268952958538776
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.0,
+        "epochs": 8,
+        "inner_rank_ic": 0.03467017583344908
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.2,
+        "epochs": 8,
+        "inner_rank_ic": 0.03560883375630586
+      }
+    ],
+    "window": "2017-01"
+  },
+  {
+    "model": "momentum",
+    "window": "2018-01",
+    "chosen": {
+      "rule": "equal-weight mom minus reversal"
+    }
+  },
+  {
+    "model": "ridge",
+    "chosen": {
+      "alpha": 1.0,
+      "inner_rank_ic": 0.03252733278726259
+    },
+    "grid": [
+      {
+        "alpha": 0.1,
+        "inner_rank_ic": 0.03248200563612955
+      },
+      {
+        "alpha": 1.0,
+        "inner_rank_ic": 0.03252733278726259
+      },
+      {
+        "alpha": 10.0,
+        "inner_rank_ic": 0.032494923931772446
+      },
+      {
+        "alpha": 100.0,
+        "inner_rank_ic": 0.03212140081489584
+      }
+    ],
+    "window": "2018-01"
+  },
+  {
+    "model": "lgbm",
+    "chosen": {
+      "n_estimators": 200,
+      "learning_rate": 0.05,
+      "num_leaves": 15,
+      "min_child_samples": 50,
+      "inner_rank_ic": 0.03393881917439355
+    },
+    "grid": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.0295900976150833
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.03393881917439355
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.02717658387513605
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.03212848582503967
+      }
+    ],
+    "window": "2018-01"
+  },
+  {
+    "model": "mlp",
+    "chosen": {
+      "dropout": 0.3,
+      "rank_lambda": 0.2,
+      "epochs": 8,
+      "inner_rank_ic": 0.04926637414579208
+    },
+    "grid": [
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.0,
+        "epochs": 8,
+        "inner_rank_ic": 0.03608447469169991
+      },
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.2,
+        "epochs": 8,
+        "inner_rank_ic": 0.036005811351230106
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.0,
+        "epochs": 8,
+        "inner_rank_ic": 0.04883343073629306
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.2,
+        "epochs": 8,
+        "inner_rank_ic": 0.04926637414579208
+      }
+    ],
+    "window": "2018-01"
+  },
+  {
+    "model": "momentum",
+    "window": "2019-01",
+    "chosen": {
+      "rule": "equal-weight mom minus reversal"
+    }
+  },
+  {
+    "model": "ridge",
+    "chosen": {
+      "alpha": 0.1,
+      "inner_rank_ic": 0.02312206425864392
+    },
+    "grid": [
+      {
+        "alpha": 0.1,
+        "inner_rank_ic": 0.02312206425864392
+      },
+      {
+        "alpha": 1.0,
+        "inner_rank_ic": 0.02311246196116454
+      },
+      {
+        "alpha": 10.0,
+        "inner_rank_ic": 0.023050591248008106
+      },
+      {
+        "alpha": 100.0,
+        "inner_rank_ic": 0.0223159097216931
+      }
+    ],
+    "window": "2019-01"
+  },
+  {
+    "model": "lgbm",
+    "chosen": {
+      "n_estimators": 200,
+      "learning_rate": 0.05,
+      "num_leaves": 15,
+      "min_child_samples": 50,
+      "inner_rank_ic": 0.03141958989718858
+    },
+    "grid": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.027383266338572326
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.03141958989718858
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.02374818832723613
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.03021777602924013
+      }
+    ],
+    "window": "2019-01"
+  },
+  {
+    "model": "mlp",
+    "chosen": {
+      "dropout": 0.1,
+      "rank_lambda": 0.2,
+      "epochs": 6,
+      "inner_rank_ic": 0.03568240865065364
+    },
+    "grid": [
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.0,
+        "epochs": 6,
+        "inner_rank_ic": 0.03498738284128002
+      },
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.2,
+        "epochs": 6,
+        "inner_rank_ic": 0.03568240865065364
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.0,
+        "epochs": 6,
+        "inner_rank_ic": 0.021272741954129742
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.2,
+        "epochs": 6,
+        "inner_rank_ic": 0.02162813655004656
+      }
+    ],
+    "window": "2019-01"
+  },
+  {
+    "model": "momentum",
+    "window": "2020-01",
+    "chosen": {
+      "rule": "equal-weight mom minus reversal"
+    }
+  },
+  {
+    "model": "ridge",
+    "chosen": {
+      "alpha": 0.1,
+      "inner_rank_ic": 0.04558271092445504
+    },
+    "grid": [
+      {
+        "alpha": 0.1,
+        "inner_rank_ic": 0.04558271092445504
+      },
+      {
+        "alpha": 1.0,
+        "inner_rank_ic": 0.045536601434063295
+      },
+      {
+        "alpha": 10.0,
+        "inner_rank_ic": 0.0454829029357585
+      },
+      {
+        "alpha": 100.0,
+        "inner_rank_ic": 0.04519226567822467
+      }
+    ],
+    "window": "2020-01"
+  },
+  {
+    "model": "lgbm",
+    "chosen": {
+      "n_estimators": 200,
+      "learning_rate": 0.05,
+      "num_leaves": 15,
+      "min_child_samples": 50,
+      "inner_rank_ic": 0.047661125600741726
+    },
+    "grid": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.044155035395937424
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.047661125600741726
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.041678738910147346
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.04530136266490419
+      }
+    ],
+    "window": "2020-01"
+  },
+  {
+    "model": "mlp",
+    "chosen": {
+      "dropout": 0.1,
+      "rank_lambda": 0.2,
+      "epochs": 6,
+      "inner_rank_ic": 0.05145082089165944
+    },
+    "grid": [
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.0,
+        "epochs": 6,
+        "inner_rank_ic": 0.05072959145666047
+      },
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.2,
+        "epochs": 6,
+        "inner_rank_ic": 0.05145082089165944
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.0,
+        "epochs": 7,
+        "inner_rank_ic": 0.04000117068869106
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.2,
+        "epochs": 7,
+        "inner_rank_ic": 0.040904247278585944
+      }
+    ],
+    "window": "2020-01"
+  },
+  {
+    "model": "momentum",
+    "window": "2021-01",
+    "chosen": {
+      "rule": "equal-weight mom minus reversal"
+    }
+  },
+  {
+    "model": "ridge",
+    "chosen": {
+      "alpha": 100.0,
+      "inner_rank_ic": 0.04811651435586158
+    },
+    "grid": [
+      {
+        "alpha": 0.1,
+        "inner_rank_ic": 0.047538152949986416
+      },
+      {
+        "alpha": 1.0,
+        "inner_rank_ic": 0.047549467878093526
+      },
+      {
+        "alpha": 10.0,
+        "inner_rank_ic": 0.047615056292313156
+      },
+      {
+        "alpha": 100.0,
+        "inner_rank_ic": 0.04811651435586158
+      }
+    ],
+    "window": "2021-01"
+  },
+  {
+    "model": "lgbm",
+    "chosen": {
+      "n_estimators": 200,
+      "learning_rate": 0.05,
+      "num_leaves": 31,
+      "min_child_samples": 50,
+      "inner_rank_ic": 0.055844434373860406
+    },
+    "grid": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.04881398771811723
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.05376134494736617
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.04847993500478485
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.055844434373860406
+      }
+    ],
+    "window": "2021-01"
+  },
+  {
+    "model": "mlp",
+    "chosen": {
+      "dropout": 0.1,
+      "rank_lambda": 0.2,
+      "epochs": 6,
+      "inner_rank_ic": 0.07793099902828532
+    },
+    "grid": [
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.0,
+        "epochs": 6,
+        "inner_rank_ic": 0.07770693393509966
+      },
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.2,
+        "epochs": 6,
+        "inner_rank_ic": 0.07793099902828532
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.0,
+        "epochs": 7,
+        "inner_rank_ic": 0.05825800198283793
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.2,
+        "epochs": 7,
+        "inner_rank_ic": 0.058991697163597305
+      }
+    ],
+    "window": "2021-01"
+  },
+  {
+    "model": "momentum",
+    "window": "2022-01",
+    "chosen": {
+      "rule": "equal-weight mom minus reversal"
+    }
+  },
+  {
+    "model": "ridge",
+    "chosen": {
+      "alpha": 100.0,
+      "inner_rank_ic": 0.029069592303127733
+    },
+    "grid": [
+      {
+        "alpha": 0.1,
+        "inner_rank_ic": 0.02851426312940818
+      },
+      {
+        "alpha": 1.0,
+        "inner_rank_ic": 0.028547523823848897
+      },
+      {
+        "alpha": 10.0,
+        "inner_rank_ic": 0.028664569092593174
+      },
+      {
+        "alpha": 100.0,
+        "inner_rank_ic": 0.029069592303127733
+      }
+    ],
+    "window": "2022-01"
+  },
+  {
+    "model": "lgbm",
+    "chosen": {
+      "n_estimators": 200,
+      "learning_rate": 0.05,
+      "num_leaves": 15,
+      "min_child_samples": 20,
+      "inner_rank_ic": 0.025178903791344066
+    },
+    "grid": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.025178903791344066
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.024897528149189576
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.021557961480050975
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.021476875160675295
+      }
+    ],
+    "window": "2022-01"
+  },
+  {
+    "model": "mlp",
+    "chosen": {
+      "dropout": 0.1,
+      "rank_lambda": 0.2,
+      "epochs": 8,
+      "inner_rank_ic": 0.03303593535551927
+    },
+    "grid": [
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.0,
+        "epochs": 8,
+        "inner_rank_ic": 0.03301882654985508
+      },
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.2,
+        "epochs": 8,
+        "inner_rank_ic": 0.03303593535551927
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.0,
+        "epochs": 8,
+        "inner_rank_ic": 0.008794445747114831
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.2,
+        "epochs": 8,
+        "inner_rank_ic": 0.009783630486313812
+      }
+    ],
+    "window": "2022-01"
+  },
+  {
+    "model": "momentum",
+    "window": "2023-01",
+    "chosen": {
+      "rule": "equal-weight mom minus reversal"
+    }
+  },
+  {
+    "model": "ridge",
+    "chosen": {
+      "alpha": 100.0,
+      "inner_rank_ic": 0.004346063074080485
+    },
+    "grid": [
+      {
+        "alpha": 0.1,
+        "inner_rank_ic": 0.0037646406416045517
+      },
+      {
+        "alpha": 1.0,
+        "inner_rank_ic": 0.0037782925505283754
+      },
+      {
+        "alpha": 10.0,
+        "inner_rank_ic": 0.0037979816164571086
+      },
+      {
+        "alpha": 100.0,
+        "inner_rank_ic": 0.004346063074080485
+      }
+    ],
+    "window": "2023-01"
+  },
+  {
+    "model": "lgbm",
+    "chosen": {
+      "n_estimators": 200,
+      "learning_rate": 0.05,
+      "num_leaves": 15,
+      "min_child_samples": 20,
+      "inner_rank_ic": 0.012142813124019094
+    },
+    "grid": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.012142813124019094
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.007056176476031221
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.007807613984997369
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.009823203326102
+      }
+    ],
+    "window": "2023-01"
+  },
+  {
+    "model": "mlp",
+    "chosen": {
+      "dropout": 0.1,
+      "rank_lambda": 0.0,
+      "epochs": 4,
+      "inner_rank_ic": 0.01847976139183286
+    },
+    "grid": [
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.0,
+        "epochs": 4,
+        "inner_rank_ic": 0.01847976139183286
+      },
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.2,
+        "epochs": 4,
+        "inner_rank_ic": 0.018120893692311225
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.0,
+        "epochs": 4,
+        "inner_rank_ic": 0.017947411557519527
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.2,
+        "epochs": 4,
+        "inner_rank_ic": 0.018321310329051436
+      }
+    ],
+    "window": "2023-01"
+  },
+  {
+    "model": "momentum",
+    "window": "2024-01",
+    "chosen": {
+      "rule": "equal-weight mom minus reversal"
+    }
+  },
+  {
+    "model": "ridge",
+    "chosen": {
+      "alpha": 100.0,
+      "inner_rank_ic": 0.013537016363251428
+    },
+    "grid": [
+      {
+        "alpha": 0.1,
+        "inner_rank_ic": 0.012793004101696577
+      },
+      {
+        "alpha": 1.0,
+        "inner_rank_ic": 0.012792497818389058
+      },
+      {
+        "alpha": 10.0,
+        "inner_rank_ic": 0.012845821679452944
+      },
+      {
+        "alpha": 100.0,
+        "inner_rank_ic": 0.013537016363251428
+      }
+    ],
+    "window": "2024-01"
+  },
+  {
+    "model": "lgbm",
+    "chosen": {
+      "n_estimators": 200,
+      "learning_rate": 0.05,
+      "num_leaves": 15,
+      "min_child_samples": 50,
+      "inner_rank_ic": 0.019996230876716925
+    },
+    "grid": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.01392857121288602
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.019996230876716925
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.014585140064230895
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.015610583383776263
+      }
+    ],
+    "window": "2024-01"
+  },
+  {
+    "model": "mlp",
+    "chosen": {
+      "dropout": 0.3,
+      "rank_lambda": 0.2,
+      "epochs": 7,
+      "inner_rank_ic": 0.020864200472021133
+    },
+    "grid": [
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.0,
+        "epochs": 8,
+        "inner_rank_ic": 0.010449969365825594
+      },
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.2,
+        "epochs": 8,
+        "inner_rank_ic": 0.010593698617584128
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.0,
+        "epochs": 7,
+        "inner_rank_ic": 0.020635522004581342
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.2,
+        "epochs": 7,
+        "inner_rank_ic": 0.020864200472021133
+      }
+    ],
+    "window": "2024-01"
+  },
+  {
+    "model": "momentum",
+    "window": "2025-01",
+    "chosen": {
+      "rule": "equal-weight mom minus reversal"
+    }
+  },
+  {
+    "model": "ridge",
+    "chosen": {
+      "alpha": 100.0,
+      "inner_rank_ic": 0.031811221634481815
+    },
+    "grid": [
+      {
+        "alpha": 0.1,
+        "inner_rank_ic": 0.03159875761986335
+      },
+      {
+        "alpha": 1.0,
+        "inner_rank_ic": 0.03158984715839803
+      },
+      {
+        "alpha": 10.0,
+        "inner_rank_ic": 0.03164129906037667
+      },
+      {
+        "alpha": 100.0,
+        "inner_rank_ic": 0.031811221634481815
+      }
+    ],
+    "window": "2025-01"
+  },
+  {
+    "model": "lgbm",
+    "chosen": {
+      "n_estimators": 200,
+      "learning_rate": 0.05,
+      "num_leaves": 15,
+      "min_child_samples": 50,
+      "inner_rank_ic": 0.027598900170662733
+    },
+    "grid": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.021423894725356298
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.027598900170662733
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.02209596336909268
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.019162901549769948
+      }
+    ],
+    "window": "2025-01"
+  },
+  {
+    "model": "mlp",
+    "chosen": {
+      "dropout": 0.1,
+      "rank_lambda": 0.2,
+      "epochs": 5,
+      "inner_rank_ic": 0.02660989733867909
+    },
+    "grid": [
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.0,
+        "epochs": 5,
+        "inner_rank_ic": 0.02642522554275337
+      },
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.2,
+        "epochs": 5,
+        "inner_rank_ic": 0.02660989733867909
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.0,
+        "epochs": 7,
+        "inner_rank_ic": 0.007770956199910846
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.2,
+        "epochs": 7,
+        "inner_rank_ic": 0.008388312698315007
+      }
+    ],
+    "window": "2025-01"
+  },
+  {
+    "model": "momentum",
+    "window": "2026-01",
+    "chosen": {
+      "rule": "equal-weight mom minus reversal"
+    }
+  },
+  {
+    "model": "ridge",
+    "chosen": {
+      "alpha": 100.0,
+      "inner_rank_ic": 0.005702176656719703
+    },
+    "grid": [
+      {
+        "alpha": 0.1,
+        "inner_rank_ic": 0.0055942893560812805
+      },
+      {
+        "alpha": 1.0,
+        "inner_rank_ic": 0.005607310485819722
+      },
+      {
+        "alpha": 10.0,
+        "inner_rank_ic": 0.005610735392140957
+      },
+      {
+        "alpha": 100.0,
+        "inner_rank_ic": 0.005702176656719703
+      }
+    ],
+    "window": "2026-01"
+  },
+  {
+    "model": "lgbm",
+    "chosen": {
+      "n_estimators": 200,
+      "learning_rate": 0.05,
+      "num_leaves": 31,
+      "min_child_samples": 20,
+      "inner_rank_ic": 0.013387624354945935
+    },
+    "grid": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.007700050559846318
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.0121442471957225
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 20,
+        "inner_rank_ic": 0.013387624354945935
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "inner_rank_ic": 0.004064867729141795
+      }
+    ],
+    "window": "2026-01"
+  },
+  {
+    "model": "mlp",
+    "chosen": {
+      "dropout": 0.1,
+      "rank_lambda": 0.2,
+      "epochs": 8,
+      "inner_rank_ic": 0.016062065421583328
+    },
+    "grid": [
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.0,
+        "epochs": 8,
+        "inner_rank_ic": 0.01596168224160124
+      },
+      {
+        "dropout": 0.1,
+        "rank_lambda": 0.2,
+        "epochs": 8,
+        "inner_rank_ic": 0.016062065421583328
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.0,
+        "epochs": 8,
+        "inner_rank_ic": 0.0074668876402067584
+      },
+      {
+        "dropout": 0.3,
+        "rank_lambda": 0.2,
+        "epochs": 8,
+        "inner_rank_ic": 0.0074742838748498895
+      }
+    ],
+    "window": "2026-01"
+  }
+]
