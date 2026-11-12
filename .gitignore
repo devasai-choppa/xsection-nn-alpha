@@ -15,6 +15,7 @@ checkpoints/**
 !checkpoints/.gitkeep
 media/videos/**/partial_movie_files/
 media/texts/
+media/Tex/
 .DS_Store
 *.log
 .streamlit/secrets.toml
